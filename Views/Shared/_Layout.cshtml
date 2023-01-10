@@ -1,0 +1,67 @@
+﻿<!--
+Author: Yunus_TEZ
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kartvizit</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="iletişim kartı,kartvizit"/>
+
+	<link href="~/assets/css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+	<link href="~/assets/css/style.css" rel='stylesheet' type='text/css' />
+
+	<!--webfonts-->
+
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+	<!--//webfonts-->
+
+</head>
+<body>
+	      @RenderBody()
+
+	
+	<!-- //main -->
+	@await RenderSectionAsync("Scripts", required: false)
+	<script src="~/assets/js/jquery.min.v3.js"></script>
+	<script src="~/assets/js/jquery.circlechart.js"></script>
+	<script>
+		$('.demo-1').percentcircle();
+
+		$('.demo-2').percentcircle({
+			animate: false,
+			diameter: 100,
+			guage: 3,
+			coverBg: '#c817bc',
+			bgColor: '#c817bc',
+			fillColor: '#c817bc',
+			percentSize: '50px',
+			percentWeight: 'normal'
+		});
+
+
+	</script>
+	
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-36251023-1']);
+		_gaq.push(['_setDomainName', 'jqueryscript.net']);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+
+
+</body>
+</html>
+      
+    
+   
